@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="DemoCart Regression Test Suite" thread-count="3" parallel="tests" verbose="4">
+
+	<listeners>
+		<listener class-name="dell.qa.democart.listeners.ExtentReportListener" />
+	</listeners>
+
+
+	<test name="Login Page Test">
+		<classes>
+			<class name="dell.qa.democart.tests.LoginPageTest" />
+		</classes>
+	</test>
+
+	<test name="Account Page Test">
+		<classes>
+			<class name="dell.qa.democart.tests.MyAccountPageTest" />
+		</classes>
+	</test>
+
+	<test name="Register Page Test">
+		<classes>
+			<class name="dell.qa.democart.tests.RegisterPageTest" />
+		</classes>
+	</test>
+	
+	<test name="Product Info Test">
+		<classes>
+			<class name="dell.qa.democart.tests.ProudctInfoTest" />
+		</classes>
+	</test>
+	
+	<test name="Shopping Cart Page Test">
+		<classes>
+			<class name="dell.qa.democart.tests.ShoppingCartPageTest" />
+		</classes>
+	</test>
+	
+
+</suite>
